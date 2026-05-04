@@ -3,7 +3,8 @@ name: Release binaries
 on:
   push:
     tags:
-      - 'v*'
+      - 'v[0-9]*'
+      - 'release/**'
   workflow_dispatch:
 
 permissions:
